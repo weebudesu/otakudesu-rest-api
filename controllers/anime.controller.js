@@ -201,19 +201,19 @@ exports.epsAnime = async (req, res) => {
     $('#embed_holder > div.mirrorstream > ul.m360p > li').each((idx,el)=>{``
       mirror1.push({
         host:$(el).find('a').text().trim(),
-        id:$(el).find('a').attr('href'),
+        id:$(el).find('a').attr('data-content'),
       });
     });
     $('#embed_holder > div.mirrorstream > ul.m480p > li').each((idx,el)=>{
       mirror2.push({
         host:$(el).find('a').text().trim(),
-        id:$(el).find('a').attr('href'),
+        id:$(el).find('a').attr('data-content'),
       });
     });
     $('#embed_holder > div.mirrorstream > ul.m720p > li').each((idx,el)=>{
       mirror3.push({
         host:$(el).find('a').text().trim(),
-        id:$(el).find('a').attr('href'),
+        id:$(el).find('a').attr('data-content'),
       });
     });
     obj.mirror1 = {quality:'360p',mirrorList:mirror1}
