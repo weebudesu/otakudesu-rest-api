@@ -105,7 +105,7 @@ exports.detailAnime = async (req, res) => {
           id: $(element)
             .find("span > a")
             .attr("href")
-            .replace('https://otakudesu.bid/', ""),
+            .replace('https://otakudesu.bid/episode/', ""),
           link: $(element).find("span > a").attr("href"),
           uploaded_on: $(element).find(".zeebr").text(),
         };
@@ -172,7 +172,7 @@ exports.batchAnime = async (req, res) => {
 };
 exports.epsAnime = async (req, res) => {
   const id = req.params.id;
-  const fullUrl = `${url.baseUrl}${id}`;
+  const fullUrl = `${url.baseUrl}episode/${id}`;
   try {
     const response = await Axios.get(fullUrl);
     const $ = cheerio.load(response.data);
