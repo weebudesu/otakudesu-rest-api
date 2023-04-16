@@ -35,7 +35,7 @@
 ## Usage
 1. Clone this repository
 ```bash
-git clone https://github.com/Kaede-No-Ki/otakudesu-rest-api.git
+git clone https://github.com/weebudesu/otakudesu-rest-api.git
 ```
 2. Install packages (use `yarn` or `npm`)
 ```bash
