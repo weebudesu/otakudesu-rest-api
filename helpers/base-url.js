@@ -1,5 +1,5 @@
 module.exports = {
-    baseUrl: 'https://otakudesu.bid/',
+    baseUrl: 'https://otakudesu.lol/',
     completeAnime:'complete-anime/',
     onGoingAnime:'ongoing-anime/',
     schedule:'jadwal-rilis/',
